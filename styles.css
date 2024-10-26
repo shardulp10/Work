@@ -1,0 +1,159 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: hwb(0 96% 4%);
+    background: linear-gradient(90deg,#9ef0f0,#f2d4ad);
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #000;
+    color: hwb(0 100% 0%);
+}
+
+/* Reset link styles for the logo */
+.logo {
+    color: hwb(168 0% 28%);
+    text-decoration: none;
+}
+
+.logo a {
+    color: inherit; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove underline */
+}
+
+.logo a:hover {
+    color: inherit; /* Ensure color doesn't change on hover */
+}
+
+/* Navigation links */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: hwb(0 100% 0%);
+}
+
+.nav-links a:hover {
+    color: hwb(168 0% 28%); /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Auth links */
+.auth-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.auth-links a {
+    text-decoration: none;
+    color: hwb(0 100% 0%);
+}
+
+.auth-links a:hover {
+    color: hwb(168 0% 28%); /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Sign-up button */
+.sign-up-btn {
+    background-color: hwb(168 0% 28%);
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: hwb(0 100% 0%);
+}
+
+/* Main Content */
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    gap: 50px;
+    padding: 20px;
+}
+
+.box {
+    width: 45%;
+    padding: 40px;
+    text-align: center;
+    background: hwb(0 100% 0%);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px hwb(0 0% 100% / 0.1);
+}
+
+.companies {
+    background-color: hwb(0 100% 0%);
+}
+
+.companies h2 span {
+    color: hwb(168 0% 28%);
+}
+
+.developers h2 span {
+    color: hwb(168 0% 28%);
+}
+
+.badge {
+    background-color: hwb(168 0% 28%);
+    color: hwb(0 100% 0%);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.login-btn, .login-btn-outline {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    margin: 15px 0;
+}
+
+.login-btn {
+    background-color: hwb(168 0% 28%);
+    color: hwb(0 100% 0%);
+}
+
+.login-btn-outline {
+    background-color: hsl(0, 0%, 100%);
+    color: hwb(168 0% 28%);
+    border: 2px solid hwb(168 0% 28%);
+}
+.login-btn :hover{
+    background-image: url("Assets/1.jpg");
+}
+.box p {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.box a {
+    color: hwb(168 0% 28%);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}

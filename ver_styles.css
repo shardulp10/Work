@@ -1,0 +1,72 @@
+body {
+    font-family: sans-serif;
+    background-image: url('Assets/1.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5); /* Add transparency to see the background image */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color:hwb(168 9% 62%); ;
+    margin-bottom: 20px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: hwb(168 0% 28%); ;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: hwb(168 2% 53%);
+}
+
+.next-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none; /* Initially hidden */
+}
+
+.next-btn:hover {
+    background-color: #21618c;
+}
+
+.next-btn i {
+    font-size: 1.5em;
+}

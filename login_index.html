@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn2Earn Login</title>
+    <link rel="stylesheet" href="login_styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-image"></div>  <!-- Add a background image div -->
+    <div class="login-container">
+        <div class="login-box">
+            <h1><i class="fa-regular fa-lightbulb"></i> Learn2Earn</h1>
+            <form id="login-form">
+                <input type="text" id="username" name="username" placeholder="Email or Phone" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <div class="button-group">
+                    <button type="submit">Sign in</button>
+                    <button type="submit">Sign up</button>
+                </div>
+                <p id="error-message"></p>
+                <a href="#" class="forgot-password" id="forgot-password">Forgot password?</a>
+            </form>
+        </div>
+    </div>
+
+    <!-- Password Recovery Modal -->
+    <div id="recovery-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Recover Your Password</h2>
+            <form id="recovery-form">
+                <input type="text" id="recovery-email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Send Recovery Email</button>
+                <p id="recovery-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="login_script.js"></script>
+</body>
+</html>
